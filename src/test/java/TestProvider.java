@@ -1,12 +1,17 @@
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.HomePage;
 import com.service365.customerPage.LoginPage;
+import com.service365.customerPage.MePage;
+import com.service365.providerPage.EditServicePage;
+import com.service365.providerPage.ProviderMePage;
 import com.service365.providerPage.RegisterPage;
+import com.service365.providerPage.ServicePage;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,6 +23,9 @@ public class TestProvider {
     HomePage homePage;
     RegisterPage registerPage;
     LoginPage loginPage;
+    ProviderMePage providerMePage;
+    ServicePage servicePage;
+    EditServicePage editServicePage;
 
     @BeforeTest(groups = "basic")
     public void setup() {
@@ -46,14 +54,30 @@ public class TestProvider {
     public void testProviderLogin(){
         homePage.clickLogin();
         loginPage=new LoginPage(webDriver);
-        loginPage.setUsername("hechen");
-        loginPage.setPassword("123456");
-        loginPage.clickLogin();
+        loginPage.loginToService365("hechen","123456");
         Assert.assertEquals(webDriver.getCurrentUrl(),properties.getProperty("mePageURL"));
         Reporter.log("login success");
     }
-    @Test(groups = "providerEditProfile")
-    public void testProviderEditProfile(){
-
+    @Test(groups = "providerAddService")
+    public void testProviderAddService() throws Exception{
+        homePage.clickLogin();
+        loginPage=new LoginPage(webDriver);
+        loginPage.loginToService365("hechen","123456");
+        providerMePage=new ProviderMePage(webDriver);
+        providerMePage.clickService();
+        servicePage=new ServicePage(webDriver);
+//        添加之前service的数量
+        int i=servicePage.getServiceNumber();
+        servicePage.clickPublishNewServiceButton();
+        editServicePage=new EditServicePage(webDriver);
+        editServicePage.editService("1","up to","3","@!!","dsfe","dfbbgbttttttttttttttttttttt","D:\\anotherPig.jpg");
+        webDriver.get(properties.getProperty("myServiceURL"));
+//        添加之后service的数量
+        int j=servicePage.getServiceNumber();
+        Assert.assertEquals(i,j-1,"Successfully added service!");
+    }
+    @AfterTest()
+    public void closeDriver(){
+        webDriver.quit();
     }
 }
