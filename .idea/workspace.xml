@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="" />
+    <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,6 +237,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -307,11 +310,12 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="775" />
-    <option name="y" value="7" />
-    <option name="width" value="798" />
-    <option name="height" value="729" />
+    <option name="x" value="807" />
+    <option name="y" value="64" />
+    <option name="width" value="1225" />
+    <option name="height" value="723" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -433,8 +437,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551699765909" />
-    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551752601254" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -745,7 +749,7 @@
       <workItem from="1551480115187" duration="7623000" />
       <workItem from="1551568641875" duration="8492000" />
       <workItem from="1551655612754" duration="15554000" />
-      <workItem from="1551745227071" duration="2733000" />
+      <workItem from="1551745227071" duration="3281000" />
     </task>
     <servers />
   </component>
@@ -782,12 +786,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105165000" />
+    <option name="totallyTimeSpent" value="105713000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="794" y="20" width="798" height="729" extended-state="0" />
+    <frame x="398" y="38" width="1225" height="729" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38346884" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24291846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -804,8 +808,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Statistic" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.75609756" visible="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.24390244" side_tool="true" visible="true" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.7562232" visible="true" weight="0.8621849" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.24377683" side_tool="true" visible="true" weight="0.8621849" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4107413" weight="0.45008183" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
