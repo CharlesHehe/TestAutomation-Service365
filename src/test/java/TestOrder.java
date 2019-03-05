@@ -1,10 +1,7 @@
-package com.service365.test;
-
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.HomePage;
 import com.service365.customerPage.LoginPage;
 import com.service365.customerPage.MePage;
-import com.service365.customerPage.MyAddressPage;
 import com.service365.orderPage.MyOrderPage;
 import com.service365.orderPage.OrderDetailPage;
 import com.service365.orderPage.PlaceOrderPage;

@@ -1,5 +1,3 @@
-package com.service365.test;
-
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.*;
 import com.service365.readData.ReadExcelFile;
@@ -54,7 +52,7 @@ public class TestCustomer {
 //        Assert.assertEquals(mePage.imageCheck(), "width: 120px; height: 120px; background-image: url(\"/assets/img/default_user.png\");");
 //        测试bio
 //        Assert.assertEquals(mePage.bioCheck(), "Bio");
-//        测试contact number
+//        测试contact numbereditProfile
 //        Assert.assertEquals(mePage.contactNumberCheck(), "");
 //        测试总评价
 //        Assert.assertEquals(mePage.overallRatingCheck(), "no rating yet");
@@ -90,6 +88,8 @@ public class TestCustomer {
 
     @Test(priority = 3, groups = "editProfile")
     public void testEditProfile() {
+        Reporter.log("陈隽尔chenjuner");
+        System.out.println("陈隽尔chenjuner");
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com","123456");

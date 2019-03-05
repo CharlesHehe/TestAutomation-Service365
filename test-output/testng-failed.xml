@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
-  <test thread-count="5" name="testing1(failed)">
+  <test thread-count="5" name="Service365-TestAutomation(failed)">
     <groups>
       <run>
         <include name="basic"/>
-        <include name="homePage"/>
-        <include name="login"/>
-        <include name="changePassword"/>
+        <include name="editProfile"/>
       </run>
     </groups>
     <classes>
-      <class name="com.service365.test.TestCustomer">
+      <class name="TestCustomer">
         <methods>
+          <include name="testEditProfile"/>
           <include name="setup"/>
-          <include name="testLoginPage"/>
-          <include name="testChangePassword" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.service365.test.TestUserWithFactory -->
+      </class> <!-- TestCustomer -->
     </classes>
-  </test> <!-- testing1(failed) -->
+  </test> <!-- Service365-TestAutomation(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

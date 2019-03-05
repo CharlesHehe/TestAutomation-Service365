@@ -1,6 +1,3 @@
-package com.service365.test;
-
-
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.HomePage;
 import com.service365.customerPage.LoginPage;
