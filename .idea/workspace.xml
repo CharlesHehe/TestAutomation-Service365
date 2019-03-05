@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="first commit">
+    <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/Service365-TestAutomation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Default Suite/Service365-TestAutomation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Test222.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-TestCustomer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default Suite/Service365-TestAutomation.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/test/TestCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/test/TestOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/test/TestProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/test/Y.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/common/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/common/PropertiesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/ChangePasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/ChangePasswordPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/EditAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/EditAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/EditProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/EditProfilePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/MePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/MePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/MyAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/MyAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/customerPage/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/customerPage/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/orderPage/MyOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/orderPage/MyOrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/orderPage/OrderDetailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/orderPage/OrderDetailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/orderPage/PlaceOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/orderPage/PlaceOrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/orderPage/ServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/orderPage/ServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/providerPage/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/providerPage/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/readData/ReadExcelFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service365/readData/ReadExcelFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/test/TestCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/test/TestOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/test/TestProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service365/test/Y.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/service365-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/service365-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/testing1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/testing1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.service365.test.TestOrder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.service365.test.TestOrder.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.service365.test.TestUserWithFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.service365.test.TestUserWithFactory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/reporter-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/reporter-output.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,7 +105,7 @@
           <entry key="java" value="2400" />
           <entry key="properties" value="8" />
           <entry key="txt" value="18" />
-          <entry key="xml" value="464" />
+          <entry key="xml" value="468" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -151,7 +113,7 @@
           <entry key="JAVA" value="2400" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="Properties" value="8" />
-          <entry key="XML" value="464" />
+          <entry key="XML" value="468" />
         </counts>
       </usages-collector>
     </session>
@@ -185,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="-132">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -194,8 +156,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -369,7 +331,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551763284380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551763798612" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -687,7 +649,7 @@
       <workItem from="1551568641875" duration="8492000" />
       <workItem from="1551655612754" duration="15554000" />
       <workItem from="1551745227071" duration="5577000" />
-      <workItem from="1551754794761" duration="6931000" />
+      <workItem from="1551754794761" duration="7546000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1551752649100</created>
@@ -696,7 +658,21 @@
       <option name="project" value="LOCAL" />
       <updated>1551752649100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1551763371625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551763371625</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first commit">
+      <created>1551763686276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551763686276</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -732,7 +708,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114940000" />
+    <option name="totallyTimeSpent" value="115555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -756,7 +732,7 @@
       <window_info anchor="bottom" id="Statistic" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.85022694" weight="0.27213115" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.14977308" side_tool="true" weight="0.27213115" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4107413" visible="true" weight="0.44918033" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4107413" visible="true" weight="0.15081967" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1290,15 +1266,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="-132">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+        <state relative-caret-position="306">
+          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
         </state>
       </provider>
     </entry>
