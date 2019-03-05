@@ -1,0 +1,74 @@
+﻿1.customer创建order(done)
+使用customer账号登录
+进入service页面
+搜索指定服务，点击book now
+在place order页面进行适当设置，并点击submit
+进入order detail页面，列出order number，此时order处于waiting service provider to confirm状态
+order顶部显示 “(服务商名) will be calling you to confirm the service time. If it doesn't happen, We recommend that you give them a call at (用户的call number).”
+页面显示链接 cancel
+order status栏 显示Service time confirmed by customer处于完成状态，Provider to confirm service time处于waiting状态
+在order message栏，输入message字串，点击 leave message
+新的message显示在页面
+
+2.service provider处理新order
+使用service provider登录
+进入order页面，新创建的order显示在列表第一位
+该order的number显示正确，且状态为waiting service provider to confirm，并有链接 confirm service time显示
+点击链接 confirm service time，在弹出提示框上点击YES
+显示confirm成功，order status显示为time confirmed
+点击该order的view detail
+在order details页面，order status显示为Service time confirmed by provider，以及Scheduled on (customer设定的时间)
+order messages栏，会显示customer的message
+输入message字串，点击leave messages
+
+等待服务时间结束
+
+3. customer在服务结束后进行反馈。
+使用customer账号登录
+进入order页面，此时order status显示ended，底色为橙色
+点击view details进入 order details页面
+order status栏显示 service ended
+并且有rate and review栏显示
+进行特定打分，并留下comment，点击submit
+rate and review栏显示刷新，并且多了Rating to the customer， Rating to the service和 Rating to the provider2个打分栏
+Rating to the customer状态都是pending feedback from customer，打分为0颗星
+其他数据显示正确，而且order status中多了条成功状态 Feedback placed by customer
+
+
+4.service provider 检查order状态
+使用service provider登录
+进入order页面，刚刚完成的order显示在列表第一位，状态为ended，而且有新按钮 mark as finished，新连接 feedback
+点击按钮mark as finished，在弹出的窗口点击YES，
+页面刷新后，状态显示finished
+点击feeback连接
+进入order details页面，信息框 Rate and review显示，字串'Please give (customer名字) a feedback'
+对rate和review进行·适当设定，点击submit。
+页面刷新，所有rate and review显示正确。
+order status栏 显示Feedback placed by provider
+再次进入order 页面，那条order的连接 feedback不再显示。按钮 mark as feedback不再显示
+
+5.customer取消order(done)
+使用customer账号登录
+创建一个order
+在order detail页面，点击cancel链接
+在confirm窗口点击YES
+order detail页面刷新，显示order状态为cancelled
+在order status栏显示Order cancelled
+换用service provider账号登录
+在order页面，那个order的状态显示为cancelled
+在order detail页面。显示状态为cancelled，
+在order status栏显示的状态为 Order cancelled
+
+6.service provider取消order
+使用customer账号登录
+创建一个order
+使用service provider账号登录
+在order页面点击那个order的view details链接
+在order详情栏，点击cancel
+在confirm窗口点击YES
+order details页面状态显示为cancelled
+在order status栏，显示Order cancelled
+使用customer账号登录
+找到这个order，进入detail页面
+order details页面状态显示为cancelled
+在order status栏，显示Order cancelled

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default Suite">
+    <test thread-count="5" name="testing1">
+        <groups>
+            <run>
+                <include name="basic"/>
+                <include name="homePage"/>
+                <include name="login"/>
+                <include name="editProfile"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.service365.test.TestCustomer">
+            </class>
+            <!--<class name="com.service365.test.TestOrder">-->
+
+            <!--</class>-->
+            <!--<class name="com.service365.test.TestProvider">-->
+
+            <!--</class>-->
+        </classes>
+    </test> <!-- testing1 -->
+</suite> <!-- Default Suite -->

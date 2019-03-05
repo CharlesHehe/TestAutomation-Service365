@@ -1,0 +1,31 @@
+﻿1.添加customer（done）
+打开首页，点击register
+在register form下输入有效数据，点击regsiter
+进入用户home 页面，用户信息显示，但用户图像，bio，联系号码，总评价为空或0颗星
+页面还有add new address和edit profile链接显示
+
+2.编辑customer的profile（done）
+用customer账号登录
+点击edit profile，进入 edit profile 页面，此时别名显示，其他3个栏都为空
+输入有效数据，然后点击submit
+页面进入用户信息首页，此时，用户图片，地址等都为待输入状态。
+而用户普通信息，bio等信息显示正确。
+而且菜单栏里没有calendar命令
+
+3.添加新地址（done）
+用customer账号登录
+在首页点击add new address
+进入edit address页面，所有输入栏为空
+输入有效数据，并点击save
+进入address 列表页南，显示新增的 地址form。新增的地址显示为main address
+点击verify，则会显示verifying address的提示框，点击cancel关闭该提示框
+回到home页面，链接add new address不再显示
+
+4.继续添加新地址（done）(continue)
+继续点击add new address
+进入edit address页面，所有输入栏为空
+输入有效数据，并点击save
+进入address 列表页南，显示新增的 地址form。新增的地址会有个链接“set as main address”
+并且另有verify和delete按钮
+
+

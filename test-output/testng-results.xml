@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="7" total="9" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Terms and Conditions clickable]]>
+    </line>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="13597" started-at="2019-01-14T03:46:43Z" finished-at="2019-01-14T03:46:56Z">
+    <groups>
+      <group name="homePage">
+        <method signature="TestUserWithFactory.testHomePage()[pri:0, instance:com.service365.test.TestUserWithFactory@43a25848]" name="testHomePage" class="com.service365.test.TestCustomer"/>
+      </group> <!-- homePage -->
+      <group name="register">
+        <method signature="TestUserWithFactory.testRegisterPage()[pri:1, instance:com.service365.test.TestUserWithFactory@43a25848]" name="testRegisterPage" class="com.service365.test.TestCustomer"/>
+      </group> <!-- register -->
+    </groups>
+    <test name="testing1" duration-ms="13597" started-at="2019-01-14T03:46:43Z" finished-at="2019-01-14T03:46:56Z">
+      <class name="com.service365.test.TestCustomer">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.service365.test.TestUserWithFactory@43a25848]" name="setup" is-config="true" duration-ms="3586" started-at="2019-01-14T03:46:43Z" finished-at="2019-01-14T03:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testHomePage()[pri:0, instance:com.service365.test.TestUserWithFactory@43a25848]" name="testHomePage" duration-ms="3209" started-at="2019-01-14T03:46:46Z" finished-at="2019-01-14T03:46:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method status="PASS" signature="testRegisterPage()[pri:1, instance:com.service365.test.TestUserWithFactory@43a25848]" name="testRegisterPage" duration-ms="6750" started-at="2019-01-14T03:46:50Z" finished-at="2019-01-14T03:46:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Terms and Conditions clickable]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegisterPage -->
+      </class> <!-- com.service365.test.TestUserWithFactory -->
+    </test> <!-- testing1 -->
+  </suite> <!-- Default Suite -->
+</testng-results>

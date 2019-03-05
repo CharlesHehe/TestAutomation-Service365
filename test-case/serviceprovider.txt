@@ -1,0 +1,54 @@
+1.创建service provider
+打开网站首页并点击register
+在form register as service provider下输入各个字段，并点击register
+页面登录到用户信息首页，此时，用户图片，Bio，地址，总则，地址，总则，服务，payment介绍等都为待输入状态。
+检查用户普通信息，数据正确，而且联系号码及website等为空，总评价为0颗星。
+
+2.编辑service provider的profile
+用service provider账号登录
+点击edit profile，进入 edit profile 页面，此时别名显示，其他3个栏都为空
+输入有效数据，然后点击submit
+页面进入用户信息首页，此时，用户图片，地址，总则，服务，payment介绍等都为待输入状态。
+而用户普通信息，bio等信息显示正确。
+
+3.添加新地址
+用service provider账号登录
+在首页点击add new address
+进入edit address页面，所有输入栏为空
+输入有效数据，并点击save
+进入address 列表页南，显示新增的 地址form。新增的地址显示为main address
+点击verify，则会显示verifying address的提示框，点击cancel关闭该提示框
+回到home页面，链接add new address不再显示
+
+4.继续添加新地址
+继续点击add new address
+进入edit address页面，所有输入栏为空
+输入有效数据，并点击save
+进入address 列表页南，显示新增的 地址form。新增的地址会有个链接“set as main address”
+并且另有verify和delete按钮
+
+5.添加新服务
+用service provider账号登录
+在home页面，点击publish new service
+进入edit service页面，
+输入有效数据，并上传图片，点击save
+进入service列表页面，deal times为0，rating为0颗星，并有edit链接
+返回home页面，publish new service链接不再显示
+
+6.添加payment instruction
+用service provider账号登录
+在home页面，点击edit payment instruction
+在edit payment instruction页面，输入有效数据，点击save
+页面返回home页面，edit payment instruction链接已不再显示
+
+7.设置calendar
+用service provider账号登录
+进入calendar页面
+在add time slot form进行设置，点击save
+新设置的time slot显示在time slots form下
+再设置新的time slot，并点击save
+新的time slot显示在time slots form 下
+调整time slots form里的字段以备后用
+
+
+
