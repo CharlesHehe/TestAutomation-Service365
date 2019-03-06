@@ -12,10 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.*;
@@ -38,8 +35,16 @@ public class TestCustomer {
     ServicePage servicePage;
 
     @BeforeTest(groups = "basic")
+    @Parameters({"environment"})
     public void setup() {
-        properties = PropertiesUtils.loadProp("config.properties");
+        if("environment".equals("dev")){
+            properties = PropertiesUtils.loadProp("dev.properties");
+        }else if("environment".equals("uat")){
+            properties = PropertiesUtils.loadProp("uat.properties");
+        }else {
+
+        }
+
         System.setProperty("webdriver.chrome.driver", "browser/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();

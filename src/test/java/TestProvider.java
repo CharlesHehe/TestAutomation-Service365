@@ -1,7 +1,6 @@
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.HomePage;
 import com.service365.customerPage.LoginPage;
-import com.service365.customerPage.MePage;
 import com.service365.providerPage.EditServicePage;
 import com.service365.providerPage.ProviderMePage;
 import com.service365.providerPage.RegisterPage;
@@ -29,7 +28,7 @@ public class TestProvider {
 
     @BeforeTest(groups = "basic")
     public void setup() {
-        properties = PropertiesUtils.loadProp("config.properties");
+        properties = PropertiesUtils.loadProp("uat.properties");
         System.setProperty("webdriver.chrome.driver", "E:\\IDEA\\testing1\\chromedriver_win32\\chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();

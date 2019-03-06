@@ -92,7 +92,7 @@ public class MePage {
 //    逻辑方法
 //    检查页面元素状态是否正常
     public void myPageStatus(){
-        properties = PropertiesUtils.loadProp("config.properties");
+        properties = PropertiesUtils.loadProp("uat.properties");
 //                测试头像是否为空
         Assert.assertEquals(imageCheck(), "width: 120px; height: 120px; background-image: url(\"/assets/img/default_user.png\");");
 //        测试bio
