@@ -1,4 +1,4 @@
-package com.service365.orderPage;
+package com.service365.customerPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

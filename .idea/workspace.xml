@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test-case/caseList.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/orderPage/OrderDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service365/orderPage/OrderDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/orderPage/MyOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service365/customerPage/MyOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/orderPage/OrderDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service365/customerPage/OrderDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/orderPage/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service365/customerPage/PlaceOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service365/orderPage/ServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service365/customerPage/ServicePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrder.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +89,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="17" />
-          <entry key="java" value="100" />
+          <entry key="java" value="104" />
           <entry key="properties" value="7" />
           <entry key="xml" value="9" />
         </counts>
@@ -96,7 +97,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="17" />
-          <entry key="JAVA" value="100" />
+          <entry key="JAVA" value="104" />
           <entry key="Properties" value="7" />
           <entry key="XML" value="9" />
         </counts>
@@ -106,14 +107,14 @@
           <entry key="dummy" value="13" />
           <entry key="java" value="4974" />
           <entry key="properties" value="61" />
-          <entry key="txt" value="39" />
+          <entry key="txt" value="53" />
           <entry key="xml" value="488" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4974" />
-          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="PLAIN_TEXT" value="66" />
           <entry key="Properties" value="61" />
           <entry key="XML" value="488" />
         </counts>
@@ -122,14 +123,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2620">
-              <caret line="131" column="30" lean-forward="true" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/MyOrderPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/OrderDetailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/PlaceOrderPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/ServicePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -293,33 +332,6 @@
               <item name="service365" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service365" type="462c0819:PsiDirectoryNode" />
-              <item name="customerPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
-              <item name="service365" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service365" type="462c0819:PsiDirectoryNode" />
-              <item name="orderPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
-              <item name="service365" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service365" type="462c0819:PsiDirectoryNode" />
-              <item name="providerPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
-              <item name="service365" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,7 +362,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551847345883" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551847540356" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -622,7 +634,7 @@
       <workItem from="1551823711677" duration="6906000" />
       <workItem from="1551842721587" duration="632000" />
       <workItem from="1551843393963" duration="816000" />
-      <workItem from="1551844317694" duration="3006000" />
+      <workItem from="1551844317694" duration="3275000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1551752649100</created>
@@ -701,13 +713,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551843518901</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="整合order类">
+      <created>1551847391905</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1551847391905</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestOrder_testLeaveOrderMessage - 2019.03.06 at 12h 13m 40s.xml">
-      <configuration name="TestOrder.testLeaveOrderMessage" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestOrder_testLeaveOrderMessage - 2019.03.06 at 12h 27m 47s.xml">
       <configuration name="TestOrder.testLeaveOrderMessage" configurationId="TestNG" />
     </history-entry>
@@ -735,13 +751,15 @@
     <history-entry file="TestOrder_testBookService - 2019.03.06 at 17h 25m 23s.xml">
       <configuration name="TestOrder.testBookService" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestOrder_testLeaveOrderMessage - 2019.03.06 at 17h 43m 17s.xml">
+      <configuration name="TestOrder.testLeaveOrderMessage" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139715000" />
+    <option name="totallyTimeSpent" value="139984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -761,7 +779,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Statistic" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.84871405" weight="0.35737705" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" visible="true" weight="0.27704918" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.27704918" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4107413" weight="0.26393443" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -819,7 +837,8 @@
     <MESSAGE value="&lt;scope&gt;test&lt;/scope&gt;" />
     <MESSAGE value="third commit" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="整合order类" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合order类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,7 +928,7 @@
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/service365/orderPage/MyOrderPage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/MyOrderPage.java</url>
           <line>25</line>
           <properties />
           <option name="timeStamp" value="68" />
@@ -1225,24 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/orderPage/ServicePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/orderPage/PlaceOrderPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10980">
@@ -1256,24 +1257,6 @@
           <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/orderPage/MyOrderPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/orderPage/OrderDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-          <folding>
-            <element signature="e#2278#2279#0" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1306,11 +1289,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2620">
-          <caret line="131" column="30" lean-forward="true" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+        <state relative-caret-position="120">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/MyOrderPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/OrderDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/PlaceOrderPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service365/customerPage/ServicePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>

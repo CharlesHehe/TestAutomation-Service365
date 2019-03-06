@@ -1,9 +1,9 @@
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.*;
-import com.service365.orderPage.MyOrderPage;
-import com.service365.orderPage.OrderDetailPage;
-import com.service365.orderPage.PlaceOrderPage;
-import com.service365.orderPage.ServicePage;
+import com.service365.customerPage.MyOrderPage;
+import com.service365.customerPage.OrderDetailPage;
+import com.service365.customerPage.PlaceOrderPage;
+import com.service365.customerPage.ServicePage;
 import com.service365.readData.ReadExcelFile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
