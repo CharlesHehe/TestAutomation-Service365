@@ -1,12 +1,17 @@
 package com.service365.customerPage;
 
+import com.service365.common.PropertiesUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import java.util.Properties;
 
 public class MePage {
     WebDriver webDriver;
+    public Properties properties;
     @FindBy(xpath = "//*[@id=\"content\"]/div/div/div/div[1]/div/div[1]/div/div[1]/a")
     WebElement image;
     @FindBy(xpath = "//*[@id=\"content\"]/div/div/div/div[1]/div/div[1]/div/div[2]/h3")
@@ -81,5 +86,24 @@ public class MePage {
     }
     public void clickOrder(){
         order.click();
+    }
+
+
+//    逻辑方法
+//    检查页面元素状态是否正常
+    public void myPageStatus(){
+        properties = PropertiesUtils.loadProp("config.properties");
+//                测试头像是否为空
+        Assert.assertEquals(imageCheck(), "width: 120px; height: 120px; background-image: url(\"/assets/img/default_user.png\");");
+//        测试bio
+        Assert.assertEquals(bioCheck(), "Bio");
+//        测试contact numbereditProfile
+        Assert.assertEquals(contactNumberCheck(), "");
+//        测试总评价
+        Assert.assertEquals(overallRatingCheck(), "no rating yet");
+//        测试add new address
+//        Assert.assertEquals(addNewAddressCheck(), properties.getProperty("editNewAddressURL"));
+//        测试edit profile 页面显示
+        Assert.assertEquals(editProfileOnCheck(), properties.getProperty("editProfileURL"));
     }
 }

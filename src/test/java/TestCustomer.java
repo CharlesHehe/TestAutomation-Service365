@@ -50,26 +50,15 @@ public class TestCustomer {
 
 
     @Test(priority = 1, groups = "register")
-    public void testRegisterPage() throws InterruptedException {
+    public void testCustomerRegister() throws InterruptedException {
         homePage.clickRegister();
         registerPage = new RegisterPage(webDriver);
         registerPage.registerService365("3109272895@qq.com","123456","123456",true,true);
         Thread.sleep(5000);
 //        测试是否进入home页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
-//        测试头像是否为空
-//        Assert.assertEquals(mePage.imageCheck(), "width: 120px; height: 120px; background-image: url(\"/assets/img/default_user.png\");");
-//        测试bio
-//        Assert.assertEquals(mePage.bioCheck(), "Bio");
-//        测试contact numbereditProfile
-//        Assert.assertEquals(mePage.contactNumberCheck(), "");
-//        测试总评价
-//        Assert.assertEquals(mePage.overallRatingCheck(), "no rating yet");
-//        测试add new address
-//        Assert.assertEquals(mePage.addNewAddressCheck(), properties.getProperty("editNewAddressURL"));
-//        测试edit profile 页面显示
-//        Assert.assertEquals(mePage.editProfileOnCheck(), properties.getProperty("editProfileURL"));
-
+        mePage.myPageStatus();
+        Reporter.log("用户注册case通过。");
     }
 
     @Test(priority = 1, groups = "login")
@@ -80,12 +69,11 @@ public class TestCustomer {
         Thread.sleep(5000);
 //        测试是否进入mePage页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
-
     }
 
 
     @Test(priority = 2, groups = "changePicture")
-    public void testChangePicture() {
+    public void testChangeProfilePicture() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com","123456");
@@ -97,8 +85,6 @@ public class TestCustomer {
 
     @Test(priority = 3, groups = "editProfile")
     public void testEditProfile() {
-        Reporter.log("陈隽尔chenjuner");
-        System.out.println("陈隽尔chenjuner");
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com","123456");
@@ -109,6 +95,7 @@ public class TestCustomer {
         Assert.assertEquals(mePage.nickNameCheck(),"chenjuner");
         Assert.assertEquals(mePage.contactNumberCheck(),"9999999");
         Assert.assertEquals(mePage.instructionCheck(),"I am pretty!");
+        Reporter.log("用户修改个人信息case通过。");
     }
 
     @Test(priority = 4, groups = "changePassword", dataProvider = "dataProvider")
@@ -124,7 +111,7 @@ public class TestCustomer {
         webDriver.get(properties.getProperty("loginPageURL"));
         loginPage.loginToService365("hechenjuner@gmail.com",data.get("New password"));
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
-
+        Reporter.log("用户修改密码case通过。");
     }
 
     @Test(priority = 5, groups = "addAddress")
@@ -139,7 +126,7 @@ public class TestCustomer {
         editAddressPage.addNewAddress("1q","1w","1e","1r","1t","1y");
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("myAddressURL"));
         myAddressPage.newAddressCheck("1q","1w","1e","1r","1t","1y");
-
+        Reporter.log("用户添加地址case通过。");
     }
 
 

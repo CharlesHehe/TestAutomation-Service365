@@ -75,6 +75,7 @@ public class TestProvider {
 //        添加之后service的数量
         int j=servicePage.getServiceNumber();
         Assert.assertEquals(i,j-1,"Successfully added service!");
+        Reporter.log("商家添加服务case通过。");
     }
     @AfterTest()
     public void closeDriver(){
