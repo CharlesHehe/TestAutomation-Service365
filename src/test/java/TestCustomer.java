@@ -1,7 +1,12 @@
 import com.service365.common.PropertiesUtils;
 import com.service365.customerPage.*;
+import com.service365.orderPage.MyOrderPage;
+import com.service365.orderPage.OrderDetailPage;
+import com.service365.orderPage.PlaceOrderPage;
+import com.service365.orderPage.ServicePage;
 import com.service365.readData.ReadExcelFile;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,6 +32,10 @@ public class TestCustomer {
     ChangePasswordPage changePasswordPage;
     EditAddressPage editAddressPage;
     MyAddressPage myAddressPage;
+    MyOrderPage myOrderPage;
+    OrderDetailPage orderDetailPage;
+    PlaceOrderPage placeOrderPage;
+    ServicePage servicePage;
 
     @BeforeTest(groups = "basic")
     public void setup() {
@@ -171,7 +180,58 @@ public class TestCustomer {
         }
 
     }
+    @Test(priority = 2, groups = "order")
+    public void testBookService() {
+        homePage.clickLogin();
+        loginPage = new LoginPage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        mePage=new MePage(webDriver);
+        mePage.clickService();
+        servicePage = new ServicePage(webDriver);
+        servicePage.editFilterList("work");
+        List list = servicePage.getBookNowButtons();
+        String url = (String) list.get((int) (Math.random() * list.size()));
+        webDriver.get(url);
+        placeOrderPage = new PlaceOrderPage(webDriver);
+        placeOrderPage.setContactNumber("123");
+        placeOrderPage.clickPrivacyPolicies();
+        placeOrderPage.clickSubmitButton();
+        orderDetailPage = new OrderDetailPage(webDriver);
+//        检查各项信息是否正确
+        orderDetailPage.orderStatus();
+        Reporter.log("用户预订服务case通过。");
+    }
+    @Test()
+    public void testLeaveOrderMessage(){
+        homePage.clickLogin();
+        loginPage = new LoginPage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        mePage=new MePage(webDriver);
+        mePage.clickOrder();
+        myOrderPage = new MyOrderPage(webDriver);
+        myOrderPage.clickRandomOrder();
+        orderDetailPage=new OrderDetailPage(webDriver);
+        orderDetailPage.setMessageInput("123");
+        orderDetailPage.clickMessageSubmit();
+//        order顺序应该是倒序，case未完
+    }
+    @Test(priority = 2, groups = "cancelOrder")
+    public void testCancelOrder()throws NoAlertPresentException,InterruptedException  {
+        homePage.clickLogin();
+        loginPage = new LoginPage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        mePage=new MePage(webDriver);
+        mePage.clickOrder();
+        myOrderPage=new MyOrderPage(webDriver);
+        myOrderPage.clickRandomOrder();
+        orderDetailPage = new OrderDetailPage(webDriver);
+        orderDetailPage.clickcCancelButton();
+        orderDetailPage.acceptAlert();
+        Assert.assertEquals(orderDetailPage.orderStatus4(),"Order cancelled");
+        Assert.assertEquals(orderDetailPage.orderWaiting(),"cancelled");
+        Reporter.log("用户取消订单case通过。");
 
+    }
     @AfterTest()
     public void quit() {
         webDriver.quit();

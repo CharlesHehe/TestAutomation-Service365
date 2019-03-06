@@ -75,7 +75,7 @@ public class OrderDetailPage {
 
 
 //    逻辑代码
-    public void serviceStatus(){
+    public void orderStatus(){
         System.out.println(orderNumber());
         Assert.assertEquals(orderWaiting(), "waiting service provider to confirm");
         System.out.println(topNote());
