@@ -37,9 +37,10 @@ public class TestCustomer {
     @BeforeTest(groups = "basic")
     @Parameters({"environment"})
     public void setup() {
-        if("environment".equals("dev")){
+        String en=System.getProperty("environment");
+        if(en.equals("dev")){
             properties = PropertiesUtils.loadProp("dev.properties");
-        }else if("environment".equals("uat")){
+        }else if(en.equals("uat")){
             properties = PropertiesUtils.loadProp("uat.properties");
         }else {
 

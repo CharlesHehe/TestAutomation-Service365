@@ -2,16 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test thread-count="5" name="Service365-TestAutomation(failed)">
-    <groups>
-      <run>
-        <include name="basic"/>
-        <include name="editProfile"/>
-      </run>
-    </groups>
     <classes>
       <class name="TestCustomer">
         <methods>
           <include name="testEditProfile"/>
+          <include name="quit"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestCustomer -->
