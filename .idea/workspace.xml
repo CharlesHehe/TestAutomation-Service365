@@ -63,7 +63,7 @@
     <session id="1540428884">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -422,7 +422,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551838019853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551842776832" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -697,7 +697,7 @@
       <workItem from="1551655612754" duration="15554000" />
       <workItem from="1551745227071" duration="5577000" />
       <workItem from="1551754794761" duration="20346000" />
-      <workItem from="1551823711677" duration="6878000" />
+      <workItem from="1551823711677" duration="6906000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1551752649100</created>
@@ -755,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551836596230</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="third commit">
+      <created>1551842592779</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551842592779</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -791,7 +798,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135233000" />
+    <option name="totallyTimeSpent" value="135261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
