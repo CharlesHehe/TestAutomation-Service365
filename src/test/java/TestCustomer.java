@@ -40,10 +40,12 @@ public class TestCustomer {
         String en=System.getProperty("environment");
         if(en.equals("dev")){
             properties = PropertiesUtils.loadProp("dev.properties");
+            System.out.println("dev");
         }else if(en.equals("uat")){
             properties = PropertiesUtils.loadProp("uat.properties");
+            System.out.println("uat");
         }else {
-
+            properties = PropertiesUtils.loadProp("dev.properties");
         }
 
         System.setProperty("webdriver.chrome.driver", "browser/chromedriver.exe");
