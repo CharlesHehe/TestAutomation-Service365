@@ -38,6 +38,7 @@ public class TestCustomer {
     @Parameters({"environment"})
     public void setup() {
         String en=System.getProperty("environment");
+        System.out.println(en);
         if(en.equals("dev")){
             properties = PropertiesUtils.loadProp("dev.properties");
             System.out.println("dev");
