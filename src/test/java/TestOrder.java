@@ -33,7 +33,7 @@ public class TestOrder {
         System.setProperty("webdriver.chrome.driver", "E:\\IDEA\\testing1\\chromedriver_win32\\chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
-        webDriver.get("https://uat.service365.co.nz/");
+        webDriver.get(properties.getProperty("homePageURL"));
         homePage = new HomePage(webDriver);
     }
 
@@ -48,34 +48,39 @@ public class TestOrder {
     }
 
     @Test(priority = 2, groups = "order")
-    public void testOrderPage() {
-        webDriver.get("https://uat.service365.co.nz/Services");
+    public void testBookService() {
+        homePage.clickLogin();
+        loginPage = new LoginPage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        mePage=new MePage(webDriver);
+        mePage.clickService();
         servicePage = new ServicePage(webDriver);
-        servicePage.setKeyWord("hire");
-//        servicePage.setLocation("Auckland");
-//        servicePage.setDistricts("df");
-//        servicePage.setCategory("df");
-        servicePage.clickSearch();
-        Assert.assertNotEquals(webDriver.getCurrentUrl(), "https://uat.service365.co.nz/Services");
+        servicePage.editFilterList("clean");
         List list = servicePage.getBookNowButtons();
         String url = (String) list.get((int) (Math.random() * list.size()));
         webDriver.get(url);
         placeOrderPage = new PlaceOrderPage(webDriver);
-        placeOrderPage.setOrderNumber("123");
+        placeOrderPage.setContactNumber("123");
         placeOrderPage.clickPrivacyPolicies();
         placeOrderPage.clickSubmitButton();
         orderDetailPage = new OrderDetailPage(webDriver);
-        System.out.println(orderDetailPage.orderNumber());
-        Assert.assertEquals(orderDetailPage.orderWaiting(), "waiting service provider to confirm");
-        System.out.println(orderDetailPage.topNote());
-        Assert.assertEquals(orderDetailPage.orderStatus2(), "Service time confirmed by customer");
-        Assert.assertEquals(orderDetailPage.orderStatus3(), "Provider to confirm service time");
-
         orderDetailPage.setMessageInput("sdfef");
         orderDetailPage.clickMessageSubmit();
 
     }
-
+    @Test()
+    public void testLeaveOrderMessage(){
+        homePage.clickLogin();
+        loginPage = new LoginPage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        mePage=new MePage(webDriver);
+        mePage.clickOrder();
+        myOrderPage = new MyOrderPage(webDriver);
+        myOrderPage.clickRandomOrder();
+        orderDetailPage=new OrderDetailPage(webDriver);
+        orderDetailPage.setMessageInput("123");
+        orderDetailPage.clickMessageSubmit();
+    }
     @Test(priority = 2, groups = "cancelOrder")
     public void testCancelOrder()throws NoAlertPresentException,InterruptedException  {
         mePage.clickOrder();

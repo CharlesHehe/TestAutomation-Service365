@@ -4,14 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.Assert;
 
 
 public class OrderDetailPage {
     WebDriver webDriver;
     @FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div/div[1]/div[1]/div[1]")
     WebElement orderNumber;
-    @FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div/div[1]/div[1]/div[2]/table/tbody/tr[5]/td/span")
+    @FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div/div[1]/div[1]/div[2]/table/tbody/tr[7]/td/span")
     WebElement orderWaiting;
     @FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div/div[1]/div[1]/div[2]/div[1]")
     WebElement topNote;
@@ -70,5 +70,16 @@ public class OrderDetailPage {
     }
     public void acceptAlert(){
         alertYes.click();
+    }
+
+
+
+//    逻辑代码
+    public void serviceStatus(){
+        System.out.println(orderNumber());
+        Assert.assertEquals(orderWaiting(), "waiting service provider to confirm");
+        System.out.println(topNote());
+        Assert.assertEquals(orderStatus2(), "Service time confirmed by customer");
+        Assert.assertEquals(orderStatus3(), "Provider to confirm service time");
     }
 }

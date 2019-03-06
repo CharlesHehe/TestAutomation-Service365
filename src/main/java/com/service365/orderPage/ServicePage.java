@@ -48,6 +48,7 @@ public class ServicePage {
         searchButton.click();
     }
 
+//    逻辑方法
     public List getBookNowButtons() {
         List list;
         List list1 = new ArrayList();
@@ -66,4 +67,12 @@ public class ServicePage {
         return list1;
     }
 
+
+    public void editFilterList(String keyWord){
+        setKeyWord(keyWord);
+//        setLocation("Auckland");
+//        setDistricts("df");
+//        setCategory("df");
+        clickSearch();
+    }
 }
