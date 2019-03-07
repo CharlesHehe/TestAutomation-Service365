@@ -1,4 +1,5 @@
-import com.service365.common.PropertiesUtils;
+import com.service365.common.SelectDomain;
+import com.service365.common.SelectDriver;
 import com.service365.customerPage.*;
 import com.service365.customerPage.MyOrderPage;
 import com.service365.customerPage.OrderDetailPage;
@@ -9,7 +10,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -33,36 +33,30 @@ public class TestCustomer {
     OrderDetailPage orderDetailPage;
     PlaceOrderPage placeOrderPage;
     ServicePage servicePage;
+    SelectDomain selectDomain;
+    SelectDriver selectDriver;
 
     @BeforeTest(groups = "basic")
-    @Parameters({"environment"})
-    public void setup() {
-        String en=System.getProperty("environment");
-        System.out.println(en);
-        if(en.equals("dev")){
-            properties = PropertiesUtils.loadProp("dev.properties");
-            System.out.println("dev");
-        }else if(en.equals("uat")){
-            properties = PropertiesUtils.loadProp("uat.properties");
-            System.out.println("uat");
-        }else {
-            properties = PropertiesUtils.loadProp("dev.properties");
-        }
-
-        System.setProperty("webdriver.chrome.driver", "browser/chromedriver.exe");
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
+    @Parameters("environment")
+    public void setup(String environment) {
+        System.out.println(environment);
+        System.out.println(environment);
+        selectDomain = new SelectDomain();
+        properties = selectDomain.selectDomain(environment);
+        selectDriver=new SelectDriver();
+        webDriver=selectDriver.selectDriver("chrome");
+    }
+    @BeforeMethod()
+    public void setHomePage(){
         mePage = new MePage(webDriver);
         webDriver.get(properties.getProperty("homePageURL"));
         homePage = new HomePage(webDriver);
     }
-
-
     @Test(priority = 1, groups = "register")
     public void testCustomerRegister() throws InterruptedException {
         homePage.clickRegister();
         registerPage = new RegisterPage(webDriver);
-        registerPage.registerService365("3109272895@qq.com","123456","123456",true,true);
+        registerPage.registerService365("3109272895@qq.com", "123456", "123456", true, true);
         Thread.sleep(5000);
 //        测试是否进入home页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
@@ -74,7 +68,7 @@ public class TestCustomer {
     public void testLoginPage() throws InterruptedException {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
         Thread.sleep(5000);
 //        测试是否进入mePage页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
@@ -85,7 +79,7 @@ public class TestCustomer {
     public void testChangeProfilePicture() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
         String currentPicture = mePage.imageCheck();
         mePage.changePicture();
         String laterPicture = mePage.imageCheck();
@@ -96,29 +90,30 @@ public class TestCustomer {
     public void testEditProfile() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
         editProfilePage = new EditProfilePage(webDriver);
         mePage.clickEditProfile();
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("editProfileURL"));
-        editProfilePage.editProfile("chenjuner","9999999","Male","I am pretty!");
-        Assert.assertEquals(mePage.nickNameCheck(),"chenjuner");
-        Assert.assertEquals(mePage.contactNumberCheck(),"9999999");
-        Assert.assertEquals(mePage.instructionCheck(),"I am pretty!");
+        editProfilePage.editProfile("chenjuner", "9999999", "Male", "I am pretty!");
+        Assert.assertEquals(mePage.nickNameCheck(), "chenjuner");
+        Assert.assertEquals(mePage.contactNumberCheck(), "9999999");
+        Assert.assertEquals(mePage.instructionCheck(), "I am pretty!");
         Reporter.log("用户修改个人信息case通过。");
+        System.out.println("用户修改个人信息case通过。");
     }
 
     @Test(priority = 4, groups = "changePassword", dataProvider = "dataProvider")
     public void testChangePassword(HashMap<String, String> data) {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
         changePasswordPage = new ChangePasswordPage(webDriver);
         mePage.clickChangePassword();
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("changePasswordURL"));
-        changePasswordPage.changePassword(data.get("Current password"),data.get("New password"),data.get("Confirm password"));
+        changePasswordPage.changePassword(data.get("Current password"), data.get("New password"), data.get("Confirm password"));
 //        changePasswordPage.changePassword("123456q","123456","123456");
         webDriver.get(properties.getProperty("loginPageURL"));
-        loginPage.loginToService365("hechenjuner@gmail.com",data.get("New password"));
+        loginPage.loginToService365("hechenjuner@gmail.com", data.get("New password"));
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
         Reporter.log("用户修改密码case通过。");
     }
@@ -127,14 +122,14 @@ public class TestCustomer {
     public void testAddAddress() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
         mePage.clickAddress();
-        myAddressPage=new MyAddressPage(webDriver);
+        myAddressPage = new MyAddressPage(webDriver);
         myAddressPage.clickAddNewButton();
         editAddressPage = new EditAddressPage(webDriver);
-        editAddressPage.addNewAddress("1q","1w","1e","1r","1t","1y");
+        editAddressPage.addNewAddress("1q", "1w", "1e", "1r", "1t", "1y");
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("myAddressURL"));
-        myAddressPage.newAddressCheck("1q","1w","1e","1r","1t","1y");
+        myAddressPage.newAddressCheck("1q", "1w", "1e", "1r", "1t", "1y");
         Reporter.log("用户添加地址case通过。");
     }
 
@@ -176,12 +171,13 @@ public class TestCustomer {
         }
 
     }
+
     @Test(priority = 2, groups = "order")
     public void testBookService() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
-        mePage=new MePage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
+        mePage = new MePage(webDriver);
         mePage.clickService();
         servicePage = new ServicePage(webDriver);
         servicePage.editFilterList("work");
@@ -197,37 +193,40 @@ public class TestCustomer {
         orderDetailPage.orderStatus();
         Reporter.log("用户预订服务case通过。");
     }
+
     @Test()
-    public void testLeaveOrderMessage(){
+    public void testLeaveOrderMessage() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
-        mePage=new MePage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
+        mePage = new MePage(webDriver);
         mePage.clickOrder();
         myOrderPage = new MyOrderPage(webDriver);
         myOrderPage.clickRandomOrder();
-        orderDetailPage=new OrderDetailPage(webDriver);
+        orderDetailPage = new OrderDetailPage(webDriver);
         orderDetailPage.setMessageInput("123");
         orderDetailPage.clickMessageSubmit();
 //        order顺序应该是倒序，case未完
     }
+
     @Test(priority = 2, groups = "cancelOrder")
-    public void testCancelOrder()throws NoAlertPresentException,InterruptedException  {
+    public void testCancelOrder() throws NoAlertPresentException, InterruptedException {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
-        loginPage.loginToService365("hechenjuner@gmail.com","123456");
-        mePage=new MePage(webDriver);
+        loginPage.loginToService365("hechenjuner@gmail.com", "123456");
+        mePage = new MePage(webDriver);
         mePage.clickOrder();
-        myOrderPage=new MyOrderPage(webDriver);
+        myOrderPage = new MyOrderPage(webDriver);
         myOrderPage.clickRandomOrder();
         orderDetailPage = new OrderDetailPage(webDriver);
         orderDetailPage.clickcCancelButton();
         orderDetailPage.acceptAlert();
-        Assert.assertEquals(orderDetailPage.orderStatus4(),"Order cancelled");
-        Assert.assertEquals(orderDetailPage.orderWaiting(),"cancelled");
+        Assert.assertEquals(orderDetailPage.orderStatus4(), "Order cancelled");
+        Assert.assertEquals(orderDetailPage.orderWaiting(), "cancelled");
         Reporter.log("用户取消订单case通过。");
 
     }
+
     @AfterTest()
     public void quit() {
         webDriver.quit();
