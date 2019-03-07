@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Default Suite">
+
     <test name="Service365-TestAutomation">
+        <parameter name="environment" value="${environment}"/>
+        <!--<parameter name="browser" value="${browser}"/>-->
         <!--<parameter name="environment" value="DEV"/>-->
         <!--<groups>-->
         <!--<run>-->
@@ -13,10 +16,10 @@
         <!--</groups>-->
         <classes>
             <!--<class name="TestCustomer">-->
-                <!--<methods>-->
-                    <!--<include name="setup"></include>-->
-                    <!--<include name="testEditProfile"></include>-->
-                <!--</methods>-->
+            <!--<methods>-->
+            <!--<include name="setup"></include>-->
+            <!--<include name="testEditProfile"></include>-->
+            <!--</methods>-->
             <!--</class>-->
             <class name="TestProvider">
                 <methods>
