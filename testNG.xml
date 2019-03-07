@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Default Suite">
     <test name="Service365-TestAutomation">
-        <parameter name="environment" value="DEV"/>
+        <!--<parameter name="environment" value="DEV"/>-->
         <!--<groups>-->
         <!--<run>-->
         <!--<include name="basic"/>-->
