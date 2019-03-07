@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="add SelectDomain.java SelectDriver.java">
+    <list default="true" id="ddc65515-e095-4dcd-8b84-ce0c1f14ce72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,29 +107,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="5702" />
+          <entry key="java" value="5719" />
           <entry key="properties" value="66" />
-          <entry key="txt" value="181" />
-          <entry key="xml" value="854" />
+          <entry key="txt" value="194" />
+          <entry key="xml" value="882" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5702" />
-          <entry key="PLAIN_TEXT" value="194" />
+          <entry key="JAVA" value="5719" />
+          <entry key="PLAIN_TEXT" value="207" />
           <entry key="Properties" value="66" />
-          <entry key="XML" value="854" />
+          <entry key="XML" value="882" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="137" column="47" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
+            <state relative-caret-position="259">
+              <caret line="237" column="5" lean-forward="true" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9422#9423#0" expanded="true" />
@@ -139,15 +140,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service365.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="160">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -155,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="233">
+              <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3336#3337#0" expanded="true" />
@@ -190,8 +186,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+            <state relative-caret-position="1480">
+              <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -269,8 +265,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/service365/common/SelectDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestProvider.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
       </list>
     </option>
   </component>
@@ -337,6 +333,45 @@
               <item name="service365" type="462c0819:PsiDirectoryNode" />
               <item name="browser" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service365" type="b2602c69:ProjectViewProjectNode" />
+              <item name="service365" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -348,7 +383,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551932241511" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551953826801" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -616,7 +651,7 @@
       <workItem from="1551844317694" duration="7470000" />
       <workItem from="1551854178368" duration="990000" />
       <workItem from="1551855580970" duration="7264000" />
-      <workItem from="1551914178641" duration="11129000" />
+      <workItem from="1551914178641" duration="14870000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1551752649100</created>
@@ -765,7 +800,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551931668185</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="testNG.xml">
+      <created>1551932326845</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1551932326845</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -801,11 +843,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163562000" />
+    <option name="totallyTimeSpent" value="167303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21255673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -910,7 +951,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>104</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
@@ -928,25 +969,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>94</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>92</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>95</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>107</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
@@ -958,7 +999,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>153</line>
+          <line>156</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
@@ -1358,10 +1399,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service365.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="233">
+          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3336#3337#0" expanded="true" />
@@ -1370,32 +1421,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="137" column="47" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
+        <state relative-caret-position="259">
+          <caret line="237" column="5" lean-forward="true" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9422#9423#0" expanded="true" />
             <element signature="e#9454#9455#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service365.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>

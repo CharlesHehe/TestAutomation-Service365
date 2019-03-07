@@ -72,6 +72,7 @@ public class TestCustomer {
         Thread.sleep(5000);
 //        测试是否进入mePage页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
+        System.out.println("用户登录case通过。");
     }
 
 
@@ -131,6 +132,8 @@ public class TestCustomer {
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("myAddressURL"));
         myAddressPage.newAddressCheck("1q", "1w", "1e", "1r", "1t", "1y");
         Reporter.log("用户添加地址case通过。");
+        System.out.println("用户添加地址case通过。");
+
     }
 
 
@@ -192,6 +195,7 @@ public class TestCustomer {
 //        检查各项信息是否正确
         orderDetailPage.orderStatus();
         Reporter.log("用户预订服务case通过。");
+        System.out.println("用户预订服务case通过。");
     }
 
     @Test()
@@ -224,6 +228,7 @@ public class TestCustomer {
         Assert.assertEquals(orderDetailPage.orderStatus4(), "Order cancelled");
         Assert.assertEquals(orderDetailPage.orderWaiting(), "cancelled");
         Reporter.log("用户取消订单case通过。");
+        System.out.println("用户取消订单case通过。");
 
     }
 

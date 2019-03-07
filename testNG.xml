@@ -15,17 +15,21 @@
         <!--</run>-->
         <!--</groups>-->
         <classes>
-            <!--<class name="TestCustomer">-->
-            <!--<methods>-->
-            <!--<include name="setup"></include>-->
-            <!--<include name="testEditProfile"></include>-->
-            <!--</methods>-->
-            <!--</class>-->
-            <class name="TestProvider">
+            <class name="TestCustomer">
                 <methods>
-                    <include name="testProviderLogin"></include>
+                    <include name="setup"/>
+                    <include name="testEditProfile"/>
+                    <include name="testAddAddress"/>
+                    <include name="testBookService"/>
+                    <include name="testLeaveOrderMessage"/>
+                    <include name="testCancelOrder"/>
                 </methods>
             </class>
+            <!--<class name="TestProvider">-->
+            <!--<methods>-->
+            <!--<include name="testProviderLogin"></include>-->
+            <!--</methods>-->
+            <!--</class>-->
         </classes>
     </test> <!-- testing1 -->
 </suite> <!-- Default Suite -->
