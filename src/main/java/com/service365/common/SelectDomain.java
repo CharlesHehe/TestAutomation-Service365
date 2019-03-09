@@ -8,14 +8,12 @@ public class SelectDomain {
 
         if (environment.equals("DEV")) {
             properties = PropertiesUtils.loadProp("dev.properties");
-            System.out.println("DEV");
         } else if (environment.equals("UAT")) {
             properties = PropertiesUtils.loadProp("uat.properties");
-            System.out.println("UAT");
         } else if(environment.equals("PROD")){
             properties = PropertiesUtils.loadProp("production.properties");
         }else {
-            properties = PropertiesUtils.loadProp("dev.properties");
+            properties = PropertiesUtils.loadProp("uat.properties");
         }
         return properties;
     }

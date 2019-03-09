@@ -3,9 +3,9 @@
 <suite name="Default Suite">
 
     <test name="Service365-TestAutomation">
-        <parameter name="environment" value="${environment}"/>
+        <!--<parameter name="environment" value="${environment}"/>-->
         <!--<parameter name="browser" value="${browser}"/>-->
-        <!--<parameter name="environment" value="DEV"/>-->
+        <parameter name="environment" value="DEV"/>
         <!--<groups>-->
         <!--<run>-->
         <!--<include name="basic"/>-->
@@ -17,12 +17,10 @@
         <classes>
             <class name="TestCustomer">
                 <methods>
-                    <include name="setup"/>
-                    <include name="testEditProfile"/>
-                    <include name="testAddAddress"/>
+                    <!--<include name="testEditProfile"/>-->
+                    <!--<include name="testAddAddress"/>-->
                     <include name="testBookService"/>
-                    <include name="testLeaveOrderMessage"/>
-                    <include name="testCancelOrder"/>
+                    <!--<include name="testCancelOrder"/>-->
                 </methods>
             </class>
             <!--<class name="TestProvider">-->

@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="TestCustomer" hash-for-method="testEditProfile">testEditProfile</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="TestCustomer" hash-for-method="testBookService">testBookService</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testEditProfile">
-                  </a> <!-- testEditProfile -->
-                  <span class="method-name">testEditProfile</span>
+                  <a name="testBookService">
+                  </a> <!-- testBookService -->
+                  <span class="method-name">testBookService</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,8 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;TestCustomer&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;setup&quot;/&gt;
-          &lt;include name=&quot;testEditProfile&quot;/&gt;
+          &lt;include name=&quot;testBookService&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCustomer --&gt;
     &lt;/classes&gt;
@@ -175,10 +174,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">editProfile</span>
+              <span class="test-group-name">order</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">testEditProfile</span>
+                <span class="method-in-group-name">testBookService</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -200,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testEditProfile')
+data.setCell(0, 1, 'testBookService')
 data.setCell(0, 2, 'TestCustomer')
-data.setCell(0, 3, 44396);
+data.setCell(0, 3, 131852);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -219,9 +218,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testEditProfile</span>
+              <span class="reporter-method-name">testBookService</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">用户修改个人信息case通过。</span>
+                <span class="reporter-method-output">用户预订服务case通过。</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,11 +233,11 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCustomer</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testBookService</span>
-                <br/>
                 <span class="ignored-method-name">testAddAddress</span>
                 <br/>
                 <span class="ignored-method-name">testCustomerRegister</span>
+                <br/>
+                <span class="ignored-method-name">testEditProfile</span>
                 <br/>
                 <span class="ignored-method-name">testCancelOrder</span>
                 <br/>
@@ -267,13 +266,21 @@ return data;
                 <span class="method-name">setup(DEV)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setHomePage</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testEditProfile</span>
-                <span class="method-start">16432 ms</span>
+                <span class="method-name">testBookService</span>
+                <span class="method-start">9610 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">141463 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">92838 ms</span>
+                <span class="method-start">141877 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

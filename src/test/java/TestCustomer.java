@@ -40,18 +40,24 @@ public class TestCustomer {
     @Parameters("environment")
     public void setup(String environment) {
         System.out.println(environment);
-        System.out.println(environment);
         selectDomain = new SelectDomain();
         properties = selectDomain.selectDomain(environment);
-        selectDriver=new SelectDriver();
-        webDriver=selectDriver.selectDriver("chrome");
     }
+
     @BeforeMethod()
-    public void setHomePage(){
+    public void setHomePage() {
+        selectDriver = new SelectDriver();
+        webDriver = selectDriver.selectDriver("chrome");
         mePage = new MePage(webDriver);
         webDriver.get(properties.getProperty("homePageURL"));
         homePage = new HomePage(webDriver);
     }
+
+    @AfterMethod()
+    public void closeDriver() {
+        webDriver.close();
+    }
+
     @Test(priority = 1, groups = "register")
     public void testCustomerRegister() throws InterruptedException {
         homePage.clickRegister();
@@ -183,14 +189,15 @@ public class TestCustomer {
         mePage = new MePage(webDriver);
         mePage.clickService();
         servicePage = new ServicePage(webDriver);
-        servicePage.editFilterList("work");
+        servicePage.editFilterList("hair");
         List list = servicePage.getBookNowButtons();
         String url = (String) list.get((int) (Math.random() * list.size()));
         webDriver.get(url);
         placeOrderPage = new PlaceOrderPage(webDriver);
-        placeOrderPage.setContactNumber("123");
-        placeOrderPage.clickPrivacyPolicies();
-        placeOrderPage.clickSubmitButton();
+        placeOrderPage.setAllElement();
+        while (webDriver.getCurrentUrl().equals(url)) {
+            placeOrderPage.checkPlaceOrderUrl();
+        }
         orderDetailPage = new OrderDetailPage(webDriver);
 //        检查各项信息是否正确
         orderDetailPage.orderStatus();
@@ -214,7 +221,7 @@ public class TestCustomer {
     }
 
     @Test(priority = 2, groups = "cancelOrder")
-    public void testCancelOrder() throws NoAlertPresentException, InterruptedException {
+    public void testCancelOrder() throws NoAlertPresentException {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com", "123456");

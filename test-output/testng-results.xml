@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[用户修改个人信息case通过。]]>
+      <![CDATA[用户预订服务case通过。]]>
     </line>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="93512" started-at="2019-03-07T00:22:16Z" finished-at="2019-03-07T00:23:50Z">
+  <suite name="Default Suite" duration-ms="143075" started-at="2019-03-09T04:10:20Z" finished-at="2019-03-09T04:12:43Z">
     <groups>
-      <group name="editProfile">
-        <method signature="TestCustomer.testEditProfile()[pri:3, instance:TestCustomer@7219ec67]" name="testEditProfile" class="TestCustomer"/>
-      </group> <!-- editProfile -->
+      <group name="order">
+        <method signature="TestCustomer.testBookService()[pri:2, instance:TestCustomer@38c5cc4c]" name="testBookService" class="TestCustomer"/>
+      </group> <!-- order -->
     </groups>
-    <test name="Service365-TestAutomation" duration-ms="93512" started-at="2019-03-07T00:22:16Z" finished-at="2019-03-07T00:23:50Z">
+    <test name="Service365-TestAutomation" duration-ms="143075" started-at="2019-03-09T04:10:20Z" finished-at="2019-03-09T04:12:43Z">
       <class name="TestCustomer">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:TestCustomer@7219ec67]" name="setup" is-config="true" duration-ms="16412" started-at="2019-03-07T00:22:16Z" finished-at="2019-03-07T00:22:33Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:TestCustomer@38c5cc4c]" name="setup" is-config="true" duration-ms="47" started-at="2019-03-09T04:10:20Z" finished-at="2019-03-09T04:10:20Z">
           <params>
             <param index="0">
               <value>
@@ -24,14 +24,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testEditProfile()[pri:3, instance:TestCustomer@7219ec67]" name="testEditProfile" duration-ms="44396" started-at="2019-03-07T00:22:33Z" finished-at="2019-03-07T00:23:17Z">
+        <test-method status="PASS" signature="setHomePage()[pri:0, instance:TestCustomer@38c5cc4c]" name="setHomePage" is-config="true" duration-ms="9527" started-at="2019-03-09T04:10:20Z" finished-at="2019-03-09T04:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setHomePage -->
+        <test-method status="PASS" signature="testBookService()[pri:2, instance:TestCustomer@38c5cc4c]" name="testBookService" duration-ms="131852" started-at="2019-03-09T04:10:30Z" finished-at="2019-03-09T04:12:42Z">
           <reporter-output>
             <line>
-              <![CDATA[用户修改个人信息case通过。]]>
+              <![CDATA[用户预订服务case通过。]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testEditProfile -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:TestCustomer@7219ec67]" name="quit" is-config="true" duration-ms="672" started-at="2019-03-07T00:23:49Z" finished-at="2019-03-07T00:23:50Z">
+        </test-method> <!-- testBookService -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:TestCustomer@38c5cc4c]" name="closeDriver" is-config="true" duration-ms="412" started-at="2019-03-09T04:12:42Z" finished-at="2019-03-09T04:12:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:TestCustomer@38c5cc4c]" name="quit" is-config="true" duration-ms="1195" started-at="2019-03-09T04:12:42Z" finished-at="2019-03-09T04:12:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
