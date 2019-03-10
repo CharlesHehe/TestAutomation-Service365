@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_Suite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="TestCustomer" hash-for-method="testBookService">testBookService</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="TestProvider" hash-for-method="testDeleteExternalOrder">testDeleteExternalOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCustomer</span>
+              <span class="class-name">TestProvider</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBookService">
-                  </a> <!-- testBookService -->
-                  <span class="method-name">testBookService</span>
+                  <a name="testDeleteExternalOrder">
+                  </a> <!-- testDeleteExternalOrder -->
+                  <span class="method-name">testDeleteExternalOrder</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,11 +145,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Service365-TestAutomation&quot;&gt;
     &lt;parameter name=&quot;environment&quot; value=&quot;DEV&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCustomer&quot;&gt;
+      &lt;class name=&quot;TestProvider&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testBookService&quot;/&gt;
+          &lt;include name=&quot;testDeleteExternalOrder&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCustomer --&gt;
+      &lt;/class&gt; &lt;!-- TestProvider --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Service365-TestAutomation --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -173,14 +173,6 @@
             <span class="header-content">Groups for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">order</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">testBookService</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_Suite" class="panel">
@@ -199,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testBookService')
-data.setCell(0, 2, 'TestCustomer')
-data.setCell(0, 3, 131852);
+data.setCell(0, 1, 'testDeleteExternalOrder')
+data.setCell(0, 2, 'TestProvider')
+data.setCell(0, 3, 50474);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -218,38 +210,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testBookService</span>
+              <span class="reporter-method-name">testDeleteExternalOrder</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">用户预订服务case通过。</span>
+                <span class="reporter-method-output">testDeleteExternalOrder case pass</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCustomer</span>
+              <span class="ignored-class-name">TestProvider</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAddAddress</span>
+                <span class="ignored-method-name">testAddService</span>
                 <br/>
-                <span class="ignored-method-name">testCustomerRegister</span>
+                <span class="ignored-method-name">testAddExternalOrder</span>
                 <br/>
-                <span class="ignored-method-name">testEditProfile</span>
-                <br/>
-                <span class="ignored-method-name">testCancelOrder</span>
-                <br/>
-                <span class="ignored-method-name">testChangePassword</span>
-                <br/>
-                <span class="ignored-method-name">testChangeProfilePicture</span>
-                <br/>
-                <span class="ignored-method-name">testLeaveOrderMessage</span>
-                <br/>
-                <span class="ignored-method-name">testLoginPage</span>
-                <br/>
-                <span class="ignored-method-name">testFindPassword</span>
+                <span class="ignored-method-name">testProviderLogin</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -261,26 +241,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCustomer</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestProvider</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(DEV)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setHomePage</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testBookService</span>
-                <span class="method-start">9610 ms</span>
+                <span class="method-name">testDeleteExternalOrder</span>
+                <span class="method-start">6802 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">141463 ms</span>
+                <span class="method-start">57277 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">141877 ms</span>
+                <span class="method-start">59604 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

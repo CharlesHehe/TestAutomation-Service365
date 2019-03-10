@@ -67,7 +67,7 @@ public class TestCustomer {
 //        测试是否进入home页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
         mePage.myPageStatus();
-        Reporter.log("用户注册case通过。");
+        Reporter.log("customer register case pass");
     }
 
     @Test(priority = 1, groups = "login")
@@ -78,7 +78,7 @@ public class TestCustomer {
         Thread.sleep(5000);
 //        测试是否进入mePage页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
-        System.out.println("用户登录case通过。");
+        System.out.println("customer login case pass");
     }
 
 
@@ -105,8 +105,8 @@ public class TestCustomer {
         Assert.assertEquals(mePage.nickNameCheck(), "chenjuner");
         Assert.assertEquals(mePage.contactNumberCheck(), "9999999");
         Assert.assertEquals(mePage.instructionCheck(), "I am pretty!");
-        Reporter.log("用户修改个人信息case通过。");
-        System.out.println("用户修改个人信息case通过。");
+        Reporter.log("customer editProfile case pass");
+        System.out.println("customer editProfile case pass");
     }
 
     @Test(priority = 4, groups = "changePassword", dataProvider = "dataProvider")
@@ -122,7 +122,7 @@ public class TestCustomer {
         webDriver.get(properties.getProperty("loginPageURL"));
         loginPage.loginToService365("hechenjuner@gmail.com", data.get("New password"));
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
-        Reporter.log("用户修改密码case通过。");
+        Reporter.log("customer changePassword case pass");
     }
 
     @Test(priority = 5, groups = "addAddress")
@@ -137,8 +137,8 @@ public class TestCustomer {
         editAddressPage.addNewAddress("1q", "1w", "1e", "1r", "1t", "1y");
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("myAddressURL"));
         myAddressPage.newAddressCheck("1q", "1w", "1e", "1r", "1t", "1y");
-        Reporter.log("用户添加地址case通过。");
-        System.out.println("用户添加地址case通过。");
+        Reporter.log("customer addAddress case pass");
+        System.out.println("customer addAddress case pass");
 
     }
 
@@ -201,8 +201,8 @@ public class TestCustomer {
         orderDetailPage = new OrderDetailPage(webDriver);
 //        检查各项信息是否正确
         orderDetailPage.orderStatus();
-        Reporter.log("用户预订服务case通过。");
-        System.out.println("用户预订服务case通过。");
+        Reporter.log("customers book service case pass");
+        System.out.println("customers book service case pass");
     }
 
     @Test()
@@ -234,8 +234,8 @@ public class TestCustomer {
         orderDetailPage.acceptAlert();
         Assert.assertEquals(orderDetailPage.orderStatus4(), "Order cancelled");
         Assert.assertEquals(orderDetailPage.orderWaiting(), "cancelled");
-        Reporter.log("用户取消订单case通过。");
-        System.out.println("用户取消订单case通过。");
+        Reporter.log("customer cancel order case pass");
+        System.out.println("customer cancel order case pass");
 
     }
 

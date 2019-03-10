@@ -3,9 +3,9 @@
 <suite name="Default Suite">
 
     <test name="Service365-TestAutomation">
-        <parameter name="environment" value="${environment}"/>
+        <!--<parameter name="environment" value="${environment}"/>-->
         <!--<parameter name="browser" value="${browser}"/>-->
-        <!--<parameter name="environment" value="DEV"/>-->
+        <parameter name="environment" value="DEV"/>
         <!--<groups>-->
         <!--<run>-->
         <!--<include name="basic"/>-->
@@ -15,19 +15,22 @@
         <!--</run>-->
         <!--</groups>-->
         <classes>
-            <class name="TestCustomer">
-                <methods>
-                    <include name="testEditProfile"/>
-                    <include name="testAddAddress"/>
-                    <include name="testBookService"/>
-                    <!--<include name="testCancelOrder"/>-->
-                </methods>
-            </class>
-            <!--<class name="TestProvider">-->
+            <!--<class name="TestCustomer">-->
             <!--<methods>-->
-            <!--<include name="testProviderLogin"></include>-->
+            <!--<include name="testEditProfile"/>-->
+            <!--<include name="testAddAddress"/>-->
+            <!--<include name="testBookService"/>-->
+            <!--<include name="testCancelOrder"/>-->
             <!--</methods>-->
             <!--</class>-->
+            <class name="TestProvider">
+                <methods>
+                    <!--<include name="testProviderLogin"></include>-->
+                    <!--<include name="testProviderAddExternalOrder"/>-->
+                    <!--<include name="testDeleteExternalOrder"/>-->
+                    <include name="testEnableService"/>
+                </methods>
+            </class>
         </classes>
     </test> <!-- testing1 -->
 </suite> <!-- Default Suite -->
