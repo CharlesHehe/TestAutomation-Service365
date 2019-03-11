@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default Suite">
+<suite name="Default Suite" parallel="classes" thread-count="2">
 
     <test name="Service365-TestAutomation">
-        <!--<parameter name="environment" value="${environment}"/>-->
+        <parameter name="environment" value="${environment}"/>
         <!--<parameter name="browser" value="${browser}"/>-->
-        <parameter name="environment" value="DEV"/>
+        <!--<parameter name="environment" value="DEV"/>-->
         <!--<groups>-->
         <!--<run>-->
         <!--<include name="basic"/>-->
@@ -15,19 +15,19 @@
         <!--</run>-->
         <!--</groups>-->
         <classes>
-            <!--<class name="TestCustomer">-->
-            <!--<methods>-->
-            <!--<include name="testEditProfile"/>-->
-            <!--<include name="testAddAddress"/>-->
-            <!--<include name="testBookService"/>-->
-            <!--<include name="testCancelOrder"/>-->
-            <!--</methods>-->
-            <!--</class>-->
+            <class name="TestCustomer">
+                <methods>
+                    <include name="testEditProfile"/>
+                    <include name="testAddAddress"/>
+                    <include name="testBookService"/>
+                    <!--<include name="testCancelOrder"/>-->
+                </methods>
+            </class>
             <class name="TestProvider">
                 <methods>
-                    <!--<include name="testProviderLogin"></include>-->
-                    <!--<include name="testProviderAddExternalOrder"/>-->
-                    <!--<include name="testDeleteExternalOrder"/>-->
+                    <include name="testAddService"/>
+                    <include name="testAddExternalOrder"/>
+                    <include name="testDeleteExternalOrder"/>
                     <include name="testEnableService"/>
                 </methods>
             </class>

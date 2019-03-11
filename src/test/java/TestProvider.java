@@ -67,7 +67,7 @@ public class TestProvider {
         Reporter.log("provider login pass");
     }
 
-    @Test(groups = "providerAddService")
+    @Test(priority = 1, groups = "providerAddService")
     public void testAddService() throws Exception {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
@@ -75,20 +75,17 @@ public class TestProvider {
         providerMePage = new ProviderMePage(webDriver);
         providerMePage.clickService();
         servicePage = new ServicePage(webDriver);
-//        添加之前service的数量
-        int i = servicePage.getServiceNumber();
         servicePage.clickPublishNewServiceButton();
         editServicePage = new EditServicePage(webDriver);
-        editServicePage.editService("1", "up to", "3", "@!!", "dsfe", "dfbbgbttttttttttttttttttttt", "D:\\anotherPig.jpg");
+        String title = Double.toString((Math.random() * 10000));
+        editServicePage.editService(title, "up to", "3", "@!!", "dsfe", "dfbbgbttttttttttttttttttttt", "D:\\anotherPig.jpg");
         webDriver.get(properties.getProperty("myServiceURL"));
-//        添加之后service的数量
-        int j = servicePage.getServiceNumber();
-        servicePage.checkServiceListNumber(i, j);
+        servicePage.checkFirstServiceTitle(title);
         System.out.println("testProviderAddService case pass");
         Reporter.log("testProviderAddService case pass");
     }
 
-    @Test()
+    @Test(priority = 2)
     public void testAddExternalOrder() {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
@@ -102,13 +99,13 @@ public class TestProvider {
         editExternalOrderPage.setAllElementExternalOrder("ExternalOrder", "ExternalOrder", "ExternalOrder"
                 , "ExternalOrder", "ExternalOrder@gmail.com", "ExternalOrder", "ExternalOrder", "123", "ExternalOrder");
         int n = externalOrderPage.getExternalOrderListNumber();
-        externalOrderPage.checkExternalOrderListNumber(m, n);
+        externalOrderPage.checkExternalOrderListNumber(m, n, "ADD");
         System.out.println("testProviderAddExternalOrder case pass");
         Reporter.log("testProviderAddExternalOrder case pass");
     }
 
-    @Test()
-    public void testDeleteExternalOrder() {
+    @Test(priority = 3)
+    public void testDeleteExternalOrder() throws InterruptedException {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechen", "123456");
@@ -118,13 +115,13 @@ public class TestProvider {
         int i = externalOrderPage.getExternalOrderListNumber();
         externalOrderPage.deleteExternalOrder();
         int j = externalOrderPage.getExternalOrderListNumber();
-        externalOrderPage.checkExternalOrderListNumber(i, j);
+        externalOrderPage.checkExternalOrderListNumber(i, j, "DELETE");
         System.out.println("testDeleteExternalOrder case pass");
         Reporter.log("testDeleteExternalOrder case pass");
     }
 
-    @Test()
-    public void testEnableService() {
+    @Test(priority = 4)
+    public void testEnableService() throws InterruptedException {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechen", "123456");

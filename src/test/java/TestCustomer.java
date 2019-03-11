@@ -48,7 +48,6 @@ public class TestCustomer {
     public void setHomePage() {
         selectDriver = new SelectDriver();
         webDriver = selectDriver.selectDriver("chrome");
-        mePage = new MePage(webDriver);
         webDriver.get(properties.getProperty("homePageURL"));
         homePage = new HomePage(webDriver);
     }
@@ -75,7 +74,7 @@ public class TestCustomer {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com", "123456");
-        Thread.sleep(5000);
+        mePage = new MePage(webDriver);
 //        测试是否进入mePage页面
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("mePageURL"));
         System.out.println("customer login case pass");
@@ -87,6 +86,7 @@ public class TestCustomer {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com", "123456");
+        mePage = new MePage(webDriver);
         String currentPicture = mePage.imageCheck();
         mePage.changePicture();
         String laterPicture = mePage.imageCheck();
@@ -98,13 +98,14 @@ public class TestCustomer {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com", "123456");
-        editProfilePage = new EditProfilePage(webDriver);
+        mePage = new MePage(webDriver);
         mePage.clickEditProfile();
+        editProfilePage = new EditProfilePage(webDriver);
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("editProfileURL"));
-        editProfilePage.editProfile("chenjuner", "9999999", "Male", "I am pretty!");
-        Assert.assertEquals(mePage.nickNameCheck(), "chenjuner");
-        Assert.assertEquals(mePage.contactNumberCheck(), "9999999");
-        Assert.assertEquals(mePage.instructionCheck(), "I am pretty!");
+        editProfilePage.editProfile("chen", "99999", "Male", "I pretty!");
+        Assert.assertEquals(mePage.nickNameCheck(), "chen");
+        Assert.assertEquals(mePage.contactNumberCheck(), "99999");
+        Assert.assertEquals(mePage.instructionCheck(), "I pretty!");
         Reporter.log("customer editProfile case pass");
         System.out.println("customer editProfile case pass");
     }
@@ -114,8 +115,9 @@ public class TestCustomer {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com", "123456");
-        changePasswordPage = new ChangePasswordPage(webDriver);
+        mePage = new MePage(webDriver);
         mePage.clickChangePassword();
+        changePasswordPage = new ChangePasswordPage(webDriver);
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("changePasswordURL"));
         changePasswordPage.changePassword(data.get("Current password"), data.get("New password"), data.get("Confirm password"));
 //        changePasswordPage.changePassword("123456q","123456","123456");
@@ -130,13 +132,14 @@ public class TestCustomer {
         homePage.clickLogin();
         loginPage = new LoginPage(webDriver);
         loginPage.loginToService365("hechenjuner@gmail.com", "123456");
+        mePage = new MePage(webDriver);
         mePage.clickAddress();
         myAddressPage = new MyAddressPage(webDriver);
         myAddressPage.clickAddNewButton();
         editAddressPage = new EditAddressPage(webDriver);
-        editAddressPage.addNewAddress("1q", "1w", "1e", "1r", "1t", "1y");
+        editAddressPage.addNewAddress("101", "rode", "csse", "chrischurch", "123", "I don't know");
         Assert.assertEquals(webDriver.getCurrentUrl(), properties.getProperty("myAddressURL"));
-        myAddressPage.newAddressCheck("1q", "1w", "1e", "1r", "1t", "1y");
+        myAddressPage.newAddressCheck("101", "rode", "csse", "chrischurch", "123", "I don't know");
         Reporter.log("customer addAddress case pass");
         System.out.println("customer addAddress case pass");
 
